@@ -55,7 +55,7 @@ namespace CSharpBeginnersUDemy
             displays the maximum of the two.
             */
 
-           Console.WriteLine("Enter two numbers:");
+            Console.WriteLine("Enter two numbers:");
             value1 = Convert.ToInt32(Console.ReadLine());
             value2 = Convert.ToInt32(Console.ReadLine());
             if (value1 == value2)
@@ -464,7 +464,7 @@ namespace CSharpBeginnersUDemy
             Write a program that reads a text file and displays the number of words.
             */
 
-            textPath = @"D:\Projects\CSharpBeginnersUDemy\CSharpBeginnersUDemy\TextFile.txt";
+            textPath = @"D:\Projects\CSharpBeginnerUDemy\CSharpBeginnersUDemy\TextFile.txt"; // NOTE dynamic path construction was part of this course. Thus this will likely cause an exception on your PC.
             File.SetAttributes(textPath, FileAttributes.Normal);
             input = File.ReadAllText(textPath);
             inputValues = input.Replace("\n", " ").Split(" ");
@@ -477,7 +477,7 @@ namespace CSharpBeginnersUDemy
             Write a program that reads a text file and displays the longest word in the file. 
             */
 
-            textPath = @"D:\Projects\CSharpBeginnersUDemy\CSharpBeginnersUDemy\TextFile.txt";
+            textPath = @"D:\Projects\CSharpBeginnerUDemy\CSharpBeginnersUDemy\TextFile.txt"; // NOTE dynamic path construction was part of this course. Thus this will likely cause an exception on your PC.
             File.SetAttributes(textPath, FileAttributes.Normal);
             input = File.ReadAllText(textPath);
             inputValues = input.Replace("\n", " ").Split(" ");
